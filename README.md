@@ -34,7 +34,7 @@ Looking for a seamless way to manage your job search? Our Job Application Tracke
 
 ### Version Tags
 
-[![DOI](https://zenodo.org/badge/428888852.svg)](https://zenodo.org/badge/latestdoi/428888852)
+[![DOI](https://zenodo.org/badge/880548962.svg)](https://doi.org/10.5281/zenodo.14027305)
 ![Python](https://img.shields.io/badge/python-v3.8+-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
