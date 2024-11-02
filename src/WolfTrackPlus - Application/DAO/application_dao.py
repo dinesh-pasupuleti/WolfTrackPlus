@@ -92,20 +92,28 @@ class application_dao:
            )
         else:
             base_query = (
-                "INSERT INTO application (user_id, company_id, role_id, application_date, "
-                "job_description, salary, location, status, imortant_links, resume) VALUES ("
-                f"{str(userId)}, "
-                f"{str(companyId)}, "
-                f"{str(roleId)}, "
-                f"{date_applied}, "
-                f"'{job_profile}', "
-                f"{str(salary)}, "
-                f"'{location}', "
-                f"'{status}', "
-                f"'{notes}', "
-                "NULL" 
-                ");"
-            )
+        "INSERT INTO application (user_id, company_id, role_id, application_date, "
+        "job_description, salary, location, status, imortant_links, resume) VALUES ("
+        + str(userId)
+        + ", "
+        + str(companyId)
+        + ", "
+        + str(roleId)
+        + ", '"
+        + date_applied
+        + "', '"
+        + job_profile
+        + "', "
+        + str(salary)
+        + ", '"
+        + location
+        + "', '"
+        + status
+        + "', '"
+        + notes
+        + "', NULL"
+        + ");"
+    )
         return self.__db.run_query(base_query)
 
     def get_application(self, email, application_status):
